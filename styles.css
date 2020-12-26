@@ -4,7 +4,6 @@ body {
 
 .logo_docplanner {
   width: 255px;
-  margin-left: 18px;
 }
 
 li {
@@ -21,6 +20,7 @@ ul {
   list-style: none;
   letter-spacing: normal;
   margin-left: auto;
+  padding-left: 0;
 }
 
 .navbar {
@@ -28,15 +28,13 @@ ul {
   margin: 0px;
   text-decoration: none;
   justify-content: space-around;
-
+  align-items: center;
   transition: box-shadow 0.25s ease 0s;
 }
 .premierediv {
-  margin-left: 23%;
   margin-bottom: 10px;
 }
 .deux {
-  margin-right: 24%;
   margin-top: 13px;
   text-decoration: none;
 }
@@ -115,6 +113,7 @@ h4 {
   margin: 3.125rem auto 5.5rem;
   background-image: url("dada.png");
   background-repeat: no-repeat;
+  background-position: 0% 100%;
 }
 .logoxo {
   width: 30%;
@@ -217,7 +216,7 @@ h4 {
   display: flex;
   text-align: center;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .lastcenter {
     display: flex;
     justify-content: center;
@@ -225,7 +224,7 @@ h4 {
     margin-left: 26%;
     margin-right: 26%;
   }
-}
+} */
 .notrly {
   text-align: center;
   font-size: 2.1428571429em;
@@ -255,7 +254,7 @@ h4 {
   font-weight: 700;
 }
 .card {
-  margin-left: 15px;
+  width: 20rem;
 }
 .card-text {
   font-family: Roboto, Arial, sans-serif;
@@ -292,4 +291,59 @@ h4 {
   box-shadow: 0 5px 10px 0 #d3cfc9;
   z-index: 1;
   display: flex;
+}
+.widchange {
+  height: 100%;
+}
+.container {
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  .abcd {
+    padding-top: 50px;
+  }
+}
+
+.bg-success {
+  background-color: #00bfa5 !important;
+  color: white;
+  border-radius: 12px;
+}
+.bg-danger {
+  background-color: #3d83df !important;
+  color: white;
+  border-radius: 12px;
+}
+.bg-warning {
+  background-color: #1b2734 !important;
+  color: white;
+  border-radius: 12px;
+}
+h4 {
+  font-weight: lighter;
+}
+
+@media (min-width: 768px) {
+  .allincent {
+    margin-top: 50px;
+    display: flex;
+    margin-left: 5%;
+  }
+}
+li :hover {
+  color: #00bfa5 !important;
+  transition: all 0.4s ease 0s;
+}
+.lastcenter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+hr {
+  border: 1px solid rgb(128, 128, 128);
 }
